@@ -19,6 +19,7 @@
         <module>common/naming</module>
         <module>common/net</module>
         <module>common/io</module>
+        <module>service/bean-service</module>
     </modules>
 
 

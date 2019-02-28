@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="basejdk" />
         <module name="bean" />
+        <module name="bean-service" />
         <module name="io" />
         <module name="lang" />
         <module name="management" />

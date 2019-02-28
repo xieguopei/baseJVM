@@ -1,0 +1,12 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <!--bean 对应service模块信息-->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>www.xieguopei.com</groupId>
+  <artifactId>bean-service</artifactId>
+  <packaging>maven-plugin</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>bean-service Maven Mojo</name>
+  <dependencies>
+  </dependencies>
+</project>
