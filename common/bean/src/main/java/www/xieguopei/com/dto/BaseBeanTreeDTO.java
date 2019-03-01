@@ -4,7 +4,10 @@ import www.xieguopei.com.common.BaseBeanConstant;
 
 import java.awt.*;
 import java.beans.*;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * 实现一个树型结构用于存放信息并符合BeanInfo规范
@@ -12,24 +15,45 @@ import java.util.Map;
  * @date 2019-02-28
  */
 public class BaseBeanTreeDTO implements BeanInfo {
-    // 当前节点数据类型
-    private BaseBeanConstant.BaseBeanDataType dataType;
+    // 当前节点数据类型（默认分组）
+    private BaseBeanConstant.BaseBeanDataType dataType = BaseBeanConstant.BaseBeanDataType.GROUP;
     // 当前节点数据值
-    private Map<String, Object> properties;
-    // 判断多例还是单例
-    private BaseBeanConstant.BaseBeanAttribute attribute;
+    private Map<String, Object> properties = new HashMap<String, Object>();
+    // 判断多例还是单例（默认单例）
+    private BaseBeanConstant.BaseBeanAttribute attribute = BaseBeanConstant.BaseBeanAttribute.SINGLETON;
     // 子节点信息
-    private BaseBeanTreeDTO[] childs;
+    private Map<String, BaseBeanTreeDTO> childs = new HashMap<String, BaseBeanTreeDTO>();
     // 对应属性修改器方法
     private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
     // 对应敏感属性修改器方法
     private VetoableChangeSupport vetoableChangeSupport = new VetoableChangeSupport(this);
     // 对应属性描述信息
-    private PropertyDescriptor[] propertyDescriptors;
+    private Map<String, PropertyDescriptor> propertyDescriptors = new HashMap<String, PropertyDescriptor>();
     // 对应事件集描述信息
-    private EventSetDescriptor[] eventSetDescriptors;
+    private Map<String, EventSetDescriptor> eventSetDescriptors = new HashMap<String, EventSetDescriptor>();
     // 对应方法描述信息
-    private MethodDescriptor[] methodDescriptors;
+    private Map<String, MethodDescriptor> methodDescriptors = new HashMap<String, MethodDescriptor>();
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        BaseBeanTreeDTO that = (BaseBeanTreeDTO) o;
+        return dataType == that.dataType &&
+                properties.equals(that.properties) &&
+                attribute == that.attribute &&
+                childs.equals(that.childs) &&
+                propertyChangeSupport.equals(that.propertyChangeSupport) &&
+                vetoableChangeSupport.equals(that.vetoableChangeSupport) &&
+                propertyDescriptors.equals(that.propertyDescriptors) &&
+                eventSetDescriptors.equals(that.eventSetDescriptors) &&
+                methodDescriptors.equals(that.methodDescriptors);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(dataType, properties, attribute, childs, propertyChangeSupport, vetoableChangeSupport, propertyDescriptors, eventSetDescriptors, methodDescriptors);
+    }
 
     /**
      * 获得当前bean的描述信息
@@ -48,7 +72,9 @@ public class BaseBeanTreeDTO implements BeanInfo {
      * @return
      */
     public EventSetDescriptor[] getEventSetDescriptors() {
-        return eventSetDescriptors;
+        EventSetDescriptor[] eventSets = new EventSetDescriptor[eventSetDescriptors.size()];
+
+        return eventSetDescriptors.values().toArray(eventSets);
     }
 
     /**
@@ -69,7 +95,9 @@ public class BaseBeanTreeDTO implements BeanInfo {
      * @return
      */
     public PropertyDescriptor[] getPropertyDescriptors() {
-        return propertyDescriptors;
+        PropertyDescriptor[] propertyDescriptors = new PropertyDescriptor[properties.size()];
+
+        return properties.values().toArray(propertyDescriptors);
     }
 
     /**
@@ -88,7 +116,9 @@ public class BaseBeanTreeDTO implements BeanInfo {
      * @return
      */
     public MethodDescriptor[] getMethodDescriptors() {
-        return methodDescriptors;
+        MethodDescriptor[] methods = new MethodDescriptor[methodDescriptors.size()];
+
+        return methodDescriptors.values().toArray(methods);
     }
 
     /**
@@ -98,7 +128,9 @@ public class BaseBeanTreeDTO implements BeanInfo {
      * @return
      */
     public BeanInfo[] getAdditionalBeanInfo() {
-        return childs;
+        BeanInfo[] beans = new BeanInfo[childs.size()];
+
+        return childs.values().toArray(beans);
     }
 
     /**

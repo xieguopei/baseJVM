@@ -23,14 +23,17 @@ public class BaseBeanContext extends BaseBeanDesignContext {
     // 打印日志信息
     private Logger logger = Logger.getLogger(getClass().getName());
 
-    // 存储当层节点的元素信息
-    private List<BaseBeanTreeDTO> parameters = new LinkedList<BaseBeanTreeDTO>();
+    // 存储节点标识与对应元素信息
+    private Map<String, BaseBeanTreeDTO> beanTreeDTOMap = new LinkedHashMap<String, BaseBeanTreeDTO>();
 
     // 存储属性与对应信息监听器
     private Map<String, PropertyChangeListener> propertyChangeListenerMap = new HashMap<String, PropertyChangeListener>();
 
     // 存储属性与对应敏感属性信息修改监听器
     private Map<String, VetoableChangeListener> vetoableChangeListenerMap = new HashMap<String, VetoableChangeListener>();
+
+    // 成员监听器
+    private BeanContextMembershipListener membershipListener;
 
     /**
      * 实例化指定此context一个子级javaBean
@@ -50,11 +53,11 @@ public class BaseBeanContext extends BaseBeanDesignContext {
      * @author xieguopei
      * @date 2019-03-01
      * @param name
-     * @param bcc
+     * @param beanContextChild
      * @return
      * @throws IllegalArgumentException
      */
-    public InputStream getResourceAsStream(String name, BeanContextChild bcc) throws IllegalArgumentException {
+    public InputStream getResourceAsStream(String name, BeanContextChild beanContextChild) throws IllegalArgumentException {
         return null;
     }
 
@@ -63,11 +66,11 @@ public class BaseBeanContext extends BaseBeanDesignContext {
      * @author xieguopei
      * @date 2019-03-01
      * @param name
-     * @param bcc
+     * @param beanContextChild
      * @return
      * @throws IllegalArgumentException
      */
-    public URL getResource(String name, BeanContextChild bcc) throws IllegalArgumentException {
+    public URL getResource(String name, BeanContextChild beanContextChild) throws IllegalArgumentException {
         return null;
     }
 
@@ -75,20 +78,20 @@ public class BaseBeanContext extends BaseBeanDesignContext {
      * 添加context成员监听器
      * @author xieguopei
      * @date 2019-03-01
-     * @param bcml
+     * @param beanContextMembershipListener
      */
-    public void addBeanContextMembershipListener(BeanContextMembershipListener bcml) {
-
+    public void addBeanContextMembershipListener(BeanContextMembershipListener beanContextMembershipListener) {
+        membershipListener = beanContextMembershipListener;
     }
 
     /**
      * 移除context成员监听器
      * @author xieguopei
      * @date 2019-03-01
-     * @param bcml
+     * @param beanContextMembershipListener
      */
-    public void removeBeanContextMembershipListener(BeanContextMembershipListener bcml) {
-
+    public void removeBeanContextMembershipListener(BeanContextMembershipListener beanContextMembershipListener) {
+        membershipListener = null;
     }
 
     // bean child 实现方法 begin
@@ -133,7 +136,7 @@ public class BaseBeanContext extends BaseBeanDesignContext {
      * @param propertyChangeListener
      */
     public void removePropertyChangeListener(String name, PropertyChangeListener propertyChangeListener) {
-
+        propertyChangeListenerMap.remove(name);
     }
 
     /**
@@ -161,55 +164,88 @@ public class BaseBeanContext extends BaseBeanDesignContext {
 
     // collection实现方法 begin
     public int size() {
-        return parameters.size();
+        return beanTreeDTOMap.size();
     }
 
     public boolean isEmpty() {
-        return parameters.isEmpty();
+        return beanTreeDTOMap.isEmpty();
     }
 
+    /**
+     * 此处包含的是map的键值
+     * @author xieguopei
+     * @date 2019-03-01
+     * @param o
+     * @return
+     */
     public boolean contains(Object o) {
-        return parameters.contains(o);
+        return beanTreeDTOMap.containsKey(o);
     }
 
     public Iterator iterator() {
-        return parameters.iterator();
+        return beanTreeDTOMap.keySet().iterator();
     }
 
     public Object[] toArray() {
-        return parameters.toArray();
+        return beanTreeDTOMap.values().toArray();
     }
 
+    /**
+     * 支持map对应信息移除
+     * @author xieguopei
+     * @date 2019-03-01
+     * @param o
+     */
+    public void removeBaseBean(Object o) {
+        beanTreeDTOMap.remove(o);
+    }
+
+    @Deprecated
     public boolean add(Object o) {
-        return parameters.add((BaseBeanTreeDTO) o);
+        throw new RuntimeException("不支持该方法调用");
     }
 
+    /**
+     * 设置键值与对应bean关系
+     * @author xieguopei
+     * @date 2019-03-01
+     * @param key
+     * @param value
+     */
+    public void put(String key, BaseBeanTreeDTO value) {
+        beanTreeDTOMap.put(key, value);
+    }
+
+    @Deprecated
     public boolean remove(Object o) {
-        return parameters.remove(o);
+        throw new RuntimeException("不支持该方法调用");
     }
 
     public boolean addAll(Collection c) {
-        return parameters.addAll(c);
+        throw new RuntimeException("不支持该方法调用");
     }
 
     public void clear() {
-        parameters.clear();
+        beanTreeDTOMap.clear();
     }
 
+    @Deprecated
     public boolean retainAll(Collection c) {
-        return parameters.retainAll(c);
+        throw new RuntimeException("不支持该方法调用");
     }
 
+    @Deprecated
     public boolean removeAll(Collection c) {
-        return parameters.removeAll(c);
+        throw new RuntimeException("不支持该方法调用");
     }
 
+    @Deprecated
     public boolean containsAll(Collection c) {
-        return parameters.containsAll(c);
+        throw new RuntimeException("不支持该方法调用");
     }
 
     public Object[] toArray(Object[] a) {
-        return parameters.toArray(a);
+        return beanTreeDTOMap.values().toArray(a);
     }
 
     // collection 实现方法 end
