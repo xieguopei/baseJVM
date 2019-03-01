@@ -1,4 +1,4 @@
-package www.xieguopei.com.provider;
+package www.xieguopei.com.dto;
 
 import www.xieguopei.com.dto.BaseBeanTreeDTO;
 
@@ -8,7 +8,7 @@ import java.beans.beancontext.BeanContextServiceProviderBeanInfo;
 import java.beans.beancontext.BeanContextServices;
 import java.util.Iterator;
 
-public class BaseBeanContextServicesProvider extends BaseBeanTreeDTO implements BeanContextServiceProvider, BeanContextServiceProviderBeanInfo {
+public class BaseBeanServicesDTO extends BaseBeanTreeDTO implements BeanContextServiceProvider, BeanContextServiceProviderBeanInfo {
 
     /**
      * 请求来自context Service服务的一个实例

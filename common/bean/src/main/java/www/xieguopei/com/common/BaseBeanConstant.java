@@ -51,4 +51,14 @@ public class BaseBeanConstant {
             return index;
         }
     }
+
+    // 用于服务和元素的区分
+    public enum BaseBeanType {
+        SERVICE("服务节点"), TREEDATA("树节点");
+        private String typeName;
+
+        BaseBeanType(String typeName) {
+            this.typeName = typeName;
+        }
+    }
 }

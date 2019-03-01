@@ -16,23 +16,23 @@ import java.util.Objects;
  */
 public class BaseBeanTreeDTO implements BeanInfo {
     // 当前节点数据类型（默认分组）
-    private BaseBeanConstant.BaseBeanDataType dataType = BaseBeanConstant.BaseBeanDataType.GROUP;
+    protected BaseBeanConstant.BaseBeanDataType dataType = BaseBeanConstant.BaseBeanDataType.GROUP;
     // 当前节点数据值
-    private Map<String, Object> properties = new HashMap<String, Object>();
+    protected Map<String, Object> properties = new HashMap<String, Object>();
     // 判断多例还是单例（默认单例）
-    private BaseBeanConstant.BaseBeanAttribute attribute = BaseBeanConstant.BaseBeanAttribute.SINGLETON;
+    protected BaseBeanConstant.BaseBeanAttribute attribute = BaseBeanConstant.BaseBeanAttribute.SINGLETON;
     // 子节点信息
-    private Map<String, BaseBeanTreeDTO> childs = new HashMap<String, BaseBeanTreeDTO>();
+    protected Map<String, BaseBeanTreeDTO> childs = new HashMap<String, BaseBeanTreeDTO>();
     // 对应属性修改器方法
-    private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
+    protected PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
     // 对应敏感属性修改器方法
-    private VetoableChangeSupport vetoableChangeSupport = new VetoableChangeSupport(this);
+    protected VetoableChangeSupport vetoableChangeSupport = new VetoableChangeSupport(this);
     // 对应属性描述信息
-    private Map<String, PropertyDescriptor> propertyDescriptors = new HashMap<String, PropertyDescriptor>();
+    protected Map<String, PropertyDescriptor> propertyDescriptors = new HashMap<String, PropertyDescriptor>();
     // 对应事件集描述信息
-    private Map<String, EventSetDescriptor> eventSetDescriptors = new HashMap<String, EventSetDescriptor>();
+    protected Map<String, EventSetDescriptor> eventSetDescriptors = new HashMap<String, EventSetDescriptor>();
     // 对应方法描述信息
-    private Map<String, MethodDescriptor> methodDescriptors = new HashMap<String, MethodDescriptor>();
+    protected Map<String, MethodDescriptor> methodDescriptors = new HashMap<String, MethodDescriptor>();
 
     @Override
     public boolean equals(Object o) {

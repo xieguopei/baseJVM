@@ -24,13 +24,13 @@ public class BaseBeanContext extends BaseBeanDesignContext {
     private Logger logger = Logger.getLogger(getClass().getName());
 
     // 存储节点标识与对应元素信息
-    private Map<String, BaseBeanTreeDTO> beanTreeDTOMap = new LinkedHashMap<String, BaseBeanTreeDTO>();
+    protected Map<String, BaseBeanTreeDTO> beanTreeDTOMap = new LinkedHashMap<String, BaseBeanTreeDTO>();
 
     // 存储属性与对应信息监听器
-    private Map<String, PropertyChangeListener> propertyChangeListenerMap = new HashMap<String, PropertyChangeListener>();
+    protected Map<String, PropertyChangeListener> propertyChangeListenerMap = new HashMap<String, PropertyChangeListener>();
 
     // 存储属性与对应敏感属性信息修改监听器
-    private Map<String, VetoableChangeListener> vetoableChangeListenerMap = new HashMap<String, VetoableChangeListener>();
+    protected Map<String, VetoableChangeListener> vetoableChangeListenerMap = new HashMap<String, VetoableChangeListener>();
 
     // 成员监听器
     private BeanContextMembershipListener membershipListener;
