@@ -23,7 +23,19 @@ public class BaseBeanConstant {
     }
 
     // 标识bean多例还是多例
+    public enum BaseBeanAttribute {
+        SINGLETON("单例"), MULTIPLE("多例") ;
 
+        private String typeName;
+
+        BaseBeanAttribute(String typeName) {
+            this.typeName = typeName;
+        }
+
+        public String getTypeName() {
+            return typeName;
+        }
+    }
 
 
     // 用于BeanTreeDTO与下标对应关系的绑定

@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8123c26-79ab-4bef-a577-5e9cd62dee04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/BeanApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/common/BaseBeanConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/context/BaseBeanContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/context/BaseBeanDesignContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/context/BaseBeanGuiContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/customizer/BaseBeanTreeCustomizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dao/BasePersistenceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dto/BaseBeanTreeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanErrorListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanTreeListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BasePropertyChangeSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/util/BaseBeanUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/bean-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/bean-service/src/main/java/www/xieguopei/com/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanContextMembershipListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanContextServicesListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BaseBeanContextChildSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BaseBeanContextServicesSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BaseBeanContextSupport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/MyMojo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/io/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/io/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/BeanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/BeanApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/common/BaseBeanConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/common/BaseBeanConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/customizer/BaseBeanTreeCustomizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dto/BaseBeanTreeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dto/BaseBeanTreeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BasePropertyChangeSupport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/BeanApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/BeanApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/common/BaseBeanConstant$BaseBeanDataIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/common/BaseBeanConstant$BaseBeanDataIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/common/BaseBeanConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/common/BaseBeanConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/customizer/BaseBeanTreeCustomizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/dto/BaseBeanTreeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/dto/BaseBeanTreeDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/bean/target/classes/www/xieguopei/com/support/BasePropertyChangeSupport.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,23 +41,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dto/BaseBeanTreeDTO.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanTreeListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="76">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/common/BaseBeanConstant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -111,9 +100,15 @@
         <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dao/BasePersistenceDao.java" />
         <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/util/BaseBeanUtil.java" />
         <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BasePropertyChangeSupport.java" />
+        <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/common/BaseBeanConstant.java" />
         <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/BeanApplication.java" />
         <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dto/BaseBeanTreeDTO.java" />
-        <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/common/BaseBeanConstant.java" />
+        <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BaseBeanContextSupport.java" />
+        <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BaseBeanContextChildSupport.java" />
+        <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BaseBeanContextServicesSupport.java" />
+        <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanContextMembershipListener.java" />
+        <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanContextServiceRevokedListener.java" />
+        <option value="$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanContextServicesListener.java" />
       </list>
     </option>
   </component>
@@ -131,9 +126,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="689" />
-    <option name="y" value="148" />
-    <option name="width" value="1149" />
+    <option name="x" value="580" />
+    <option name="y" value="406" />
+    <option name="width" value="1826" />
     <option name="height" value="791" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -205,7 +200,18 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baseJVM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baseJVM" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="baseJVM" type="b2602c69:ProjectViewProjectNode" />
@@ -230,7 +236,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551349766278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551408288189" />
     <property name="last_opened_file_path" value="D:/ctl/ctl-user" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -248,7 +254,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BaseBeanContextSupport">
+    <configuration name="BaseBeanContextSupport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="www.xieguopei.com.support.BaseBeanContextSupport" />
+      <module name="bean" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="www.xieguopei.com.support.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BeanApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="www.xieguopei.com.BeanApplication" />
       <module name="bean" />
@@ -285,6 +305,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BaseBeanContextSupport" />
         <item itemvalue="Application.BeanApplication" />
       </list>
     </recent_temporary>
@@ -301,19 +322,19 @@
       <updated>1551268219387</updated>
       <workItem from="1551268223451" duration="27000" />
       <workItem from="1551268294326" duration="3460000" />
-      <workItem from="1551316166526" duration="17310000" />
+      <workItem from="1551316166526" duration="21834000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20797000" />
+    <option name="totallyTimeSpent" value="25321000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="689" y="148" width="1149" height="791" extended-state="0" />
+    <frame x="215" y="529" width="1826" height="791" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.2653811" />
-      <window_info id="Structure" order="1" sideWeight="0.5010395" side_tool="true" weight="0.2653811" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49848023" visible="true" weight="0.23329559" />
+      <window_info id="Structure" order="1" sideWeight="0.50151974" side_tool="true" weight="0.523416" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -324,8 +345,8 @@
       <window_info anchor="bottom" id="JRebel Executor" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26899695" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36018237" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39969605" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -351,32 +372,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/BeanApplication.java</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/bean/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/lang/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/nio/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/rmi/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/security/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/util/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/management/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -404,20 +412,6 @@
         <state relative-caret-position="-1831">
           <folding>
             <element signature="e#0#3503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanErrorListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -620,41 +614,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/customizer/BaseBeanTreeCustomizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/jdk/src.zip!/java/beans/DefaultPersistenceDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="222" column="17" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
           <folding>
             <element signature="e#0#17862#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk/src.zip!/java/beans/PersistenceDelegate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="110" column="59" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dao/BasePersistenceDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -687,10 +652,168 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/beans/PropertyChangeSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/common/BaseBeanConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/beans/EventSetDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="80" column="51" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#21071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dao/BasePersistenceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/beans/PersistenceDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/BeanApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/customizer/BaseBeanTreeCustomizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="45" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BasePropertyChangeSupport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dto/BaseBeanTreeDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/beans/beancontext/BeanContextSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BaseBeanContextServicesSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BaseBeanContextSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/support/BaseBeanContextChildSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanErrorListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanContextServiceRevokedListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/beans/beancontext/BeanContextServicesListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanContextMembershipListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/listener/BaseBeanContextServicesListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -701,40 +824,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/BeanApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk/src.zip!/java/beans/PropertyChangeSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/dto/BaseBeanTreeDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/bean/src/main/java/www/xieguopei/com/common/BaseBeanConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

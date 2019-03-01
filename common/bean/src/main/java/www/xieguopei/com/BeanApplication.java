@@ -5,6 +5,8 @@ import java.util.List;
 
 public class BeanApplication {
     public static void main(String[] args) throws IntrospectionException {
-        System.out.println(PropertyEditorManager.getEditorSearchPath()[0]);
+        PersistenceDelegate p = new Encoder().getPersistenceDelegate(List.class);
+
+        System.out.println(1);
     }
 }

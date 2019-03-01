@@ -16,14 +16,20 @@ public class BaseBeanTreeDTO implements BeanInfo {
     private BaseBeanConstant.BaseBeanDataType dataType;
     // 当前节点数据值
     private Map<String, Object> properties;
-    // 类型
-    
+    // 判断多例还是单例
+    private BaseBeanConstant.BaseBeanAttribute attribute;
     // 子节点信息
     private BaseBeanTreeDTO[] childs;
     // 对应属性修改器方法
     private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
     // 对应敏感属性修改器方法
     private VetoableChangeSupport vetoableChangeSupport = new VetoableChangeSupport(this);
+    // 对应属性描述信息
+    private PropertyDescriptor[] propertyDescriptors;
+    // 对应事件集描述信息
+    private EventSetDescriptor[] eventSetDescriptors;
+    // 对应方法描述信息
+    private MethodDescriptor[] methodDescriptors;
 
     /**
      * 获得当前bean的描述信息
@@ -32,7 +38,7 @@ public class BaseBeanTreeDTO implements BeanInfo {
      * @return
      */
     public BeanDescriptor getBeanDescriptor() {
-        return null;
+        return new BeanDescriptor(getClass());
     }
 
     /**
@@ -42,7 +48,7 @@ public class BaseBeanTreeDTO implements BeanInfo {
      * @return
      */
     public EventSetDescriptor[] getEventSetDescriptors() {
-        return new EventSetDescriptor[0];
+        return eventSetDescriptors;
     }
 
     /**
@@ -63,7 +69,7 @@ public class BaseBeanTreeDTO implements BeanInfo {
      * @return
      */
     public PropertyDescriptor[] getPropertyDescriptors() {
-        return new PropertyDescriptor[0];
+        return propertyDescriptors;
     }
 
     /**
@@ -82,7 +88,7 @@ public class BaseBeanTreeDTO implements BeanInfo {
      * @return
      */
     public MethodDescriptor[] getMethodDescriptors() {
-        return new MethodDescriptor[0];
+        return methodDescriptors;
     }
 
     /**
