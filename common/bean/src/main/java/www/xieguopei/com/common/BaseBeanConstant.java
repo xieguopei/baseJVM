@@ -1,6 +1,8 @@
 package www.xieguopei.com.common;
 
 public class BaseBeanConstant {
+    // root节点信息
+    public static final String CONTEXT_ROOT = "ROOT";
     // 指定BeanInfo路径
     String[] searchPaths = new String[] {
             // dto路径信息

@@ -2,7 +2,7 @@ package www.xieguopei.com.support;
 
 import java.beans.beancontext.BeanContextSupport;
 
-public class BaseBeanContextSupport {
+public class BaseBeanContextSupport extends BeanContextSupport {
     private static BaseBeanContextSupport instance = null;
 
     // 上下文支持控件
@@ -22,11 +22,16 @@ public class BaseBeanContextSupport {
         if(instance == null) {
             synchronized (BaseBeanContextSupport.class) {
                 instance = new BaseBeanContextSupport(new BeanContextSupport());
+
+                // 初始化实例信息
+                instance.initialize();
             }
         }
 
         return instance;
     }
+
+
 
 
 

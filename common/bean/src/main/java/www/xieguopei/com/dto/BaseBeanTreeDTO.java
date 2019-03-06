@@ -21,6 +21,8 @@ public class BaseBeanTreeDTO implements BeanInfo {
     protected Map<String, Object> properties = new HashMap<String, Object>();
     // 判断多例还是单例（默认单例）
     protected BaseBeanConstant.BaseBeanAttribute attribute = BaseBeanConstant.BaseBeanAttribute.SINGLETON;
+    // 判断是服务节点还是数据节点
+    protected BaseBeanConstant.BaseBeanType beanType = BaseBeanConstant.BaseBeanType.TREEDATA;
     // 子节点信息
     protected Map<String, BaseBeanTreeDTO> childs = new HashMap<String, BaseBeanTreeDTO>();
     // 对应属性修改器方法
@@ -40,6 +42,7 @@ public class BaseBeanTreeDTO implements BeanInfo {
         if (o == null || getClass() != o.getClass()) return false;
         BaseBeanTreeDTO that = (BaseBeanTreeDTO) o;
         return dataType == that.dataType &&
+                beanType == that.beanType &&
                 properties.equals(that.properties) &&
                 attribute == that.attribute &&
                 childs.equals(that.childs) &&
@@ -52,8 +55,10 @@ public class BaseBeanTreeDTO implements BeanInfo {
 
     @Override
     public int hashCode() {
-        return Objects.hash(dataType, properties, attribute, childs, propertyChangeSupport, vetoableChangeSupport, propertyDescriptors, eventSetDescriptors, methodDescriptors);
+        return Objects.hash(dataType, beanType, properties, attribute, childs, propertyChangeSupport, vetoableChangeSupport, propertyDescriptors, eventSetDescriptors, methodDescriptors);
     }
+
+
 
     /**
      * 获得当前bean的描述信息
@@ -142,5 +147,73 @@ public class BaseBeanTreeDTO implements BeanInfo {
      */
     public Image getIcon(int iconKind) {
         return null;
+    }
+
+    public BaseBeanConstant.BaseBeanDataType getDataType() {
+        return dataType;
+    }
+
+    public void setDataType(BaseBeanConstant.BaseBeanDataType dataType) {
+        this.dataType = dataType;
+    }
+
+    public Map<String, Object> getProperties() {
+        return properties;
+    }
+
+    public void setProperties(Map<String, Object> properties) {
+        this.properties = properties;
+    }
+
+    public BaseBeanConstant.BaseBeanAttribute getAttribute() {
+        return attribute;
+    }
+
+    public void setAttribute(BaseBeanConstant.BaseBeanAttribute attribute) {
+        this.attribute = attribute;
+    }
+
+    public BaseBeanConstant.BaseBeanType getBeanType() {
+        return beanType;
+    }
+
+    public void setBeanType(BaseBeanConstant.BaseBeanType beanType) {
+        this.beanType = beanType;
+    }
+
+    public Map<String, BaseBeanTreeDTO> getChilds() {
+        return childs;
+    }
+
+    public void setChilds(Map<String, BaseBeanTreeDTO> childs) {
+        this.childs = childs;
+    }
+
+    public PropertyChangeSupport getPropertyChangeSupport() {
+        return propertyChangeSupport;
+    }
+
+    public void setPropertyChangeSupport(PropertyChangeSupport propertyChangeSupport) {
+        this.propertyChangeSupport = propertyChangeSupport;
+    }
+
+    public VetoableChangeSupport getVetoableChangeSupport() {
+        return vetoableChangeSupport;
+    }
+
+    public void setVetoableChangeSupport(VetoableChangeSupport vetoableChangeSupport) {
+        this.vetoableChangeSupport = vetoableChangeSupport;
+    }
+
+    public void setPropertyDescriptors(Map<String, PropertyDescriptor> propertyDescriptors) {
+        this.propertyDescriptors = propertyDescriptors;
+    }
+
+    public void setEventSetDescriptors(Map<String, EventSetDescriptor> eventSetDescriptors) {
+        this.eventSetDescriptors = eventSetDescriptors;
+    }
+
+    public void setMethodDescriptors(Map<String, MethodDescriptor> methodDescriptors) {
+        this.methodDescriptors = methodDescriptors;
     }
 }

@@ -4,6 +4,7 @@ import www.xieguopei.com.dto.BaseBeanTreeDTO;
 import www.xieguopei.com.listener.BaseBeanTreeListener;
 
 import java.beans.*;
+import java.util.LinkedList;
 import java.util.List;
 
 public class BeanApplication {
@@ -42,15 +43,15 @@ public class BeanApplication {
         }
     }
     public static void main(String[] args) throws IntrospectionException {
-
-        test1 t = EventHandler.create(test1.class, new testImpl(), "mes", null, "asd");
-
-        ui u = new ui();
-
-        u.setOp("123456");
-
-        t.asd("1232222");
-
+//
+//        test1 t = EventHandler.create(test1.class, new testImpl(), "mes", null, "asd");
+//
+//        ui u = new ui();
+//
+//        u.setOp("123456");
+//
+//        t.asd("1232222");
+//
 
     }
 }
